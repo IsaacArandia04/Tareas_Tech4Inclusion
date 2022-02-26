@@ -4,6 +4,15 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Tarea 02</title>
+        <style>
+            h1,h2,h3,dt {
+                font-size:20pt ;
+                color: red;
+                font-weight: 700;
+                text-align: left;
+                text-transform: capitalize;
+            }
+        </style>
     </head>
     <body>
         <h1>Tarea 02</h1>
@@ -114,7 +123,60 @@
                         </tr>
                     </tbody>
                 </table>
+            <li><h2>Completa el siguente formulario y selecciona cual te gusto mas!</h2></li>
+                <form action="Datos">
+                    <ol>
+                        <li>Selecciona la fecha de hoy<input type="date" placeholder="Selecciona la fecha en la que completas este formulario"></li>
+                        <br>
+                        <li><label for="">Escribe tu Nombre<input type="text" value="Nombre Aqui"></label></li>
+                        <br>
+                        <li><label>Escribe tu Apellido<input type="text" value="Apellido Aqui"></label></li>
+                        <br>
+                        <li><label>Escribe tu Correo electrónico<input type="text" value="ejemplo@dominio.com"></label></li>
+                        <br>
+                        <li><label>Escribe tu numero de telefono<input type="text" value="Numero Aqui"></label></li>
+                        <br>
+                        <li>
+                            <fieldset>
+                                <legend>¿Que cancion te gusto mas?</legend>
+                                <label>Ice Ice Baby<input type="radio" name="Cancion" value="Ice Ice Baby"/></label>
+                                <br>
+                                <label>Billie Jean<input type="radio" name="Cancion" value="Billie Jean"/></label>
+                                <br>
+                                <label>Mariposa Traicionera<input type="radio" name="Cancion" value="Mariposa Traicionera"/></label>
+                                <br>
+                                <label>Oye Mi Amor<input type="radio" name="Cancion" value="Oye Mi Amor"/></label>
+                                <br>
+                                <label>Take On Me<input type="radio" name="Cancion" value="Take On Me"/></label>
+                            </fieldset>
+                        </li>
+                        <br>
+                        <li>
+                            <fieldset>
+                                <legend>¿Que libro te gusto mas?</legend>
+                                <label>Veronica Decide Morir<input type="radio" name="Libro" value="Veronica Decide Morir"/></label>
+                                <br>
+                                <label>Cronica de una muerte anunciada<input type="radio" name="libro" value="Cronica de una muerte anunciada"/></label>
+                                <br>
+                                <label>Tragedia de Numancia <input type="radio" name="Libro" value="Tragedia de Numancia "/></label>
+                            </fieldset>
+                        </li>
+                        <br>
+                        <li>
+                            <fieldset>
+                                <legend>¿Que pelicula te gusto mas?</legend>
+                                <label>Saga Rapido y Furioso <input type="radio" name="Pelicula" value="Saga Rapido y Furioso "/></label>
+                                <br>
+                                <label>Perro come Perro<input type="radio" name="Pelicula" value="Perro come Pero"/></label>
+                            </fieldset>
+                        </li>
+                        <br>
+                        <li><label>¿Te gusto la seleccion de canciones, libros y peliculas? Califica entre 1 y 5<input type="range" min="1" max="5"></label></li>
+                        <br>
+                        <input type="submit" value="Enviar!"/>
+                    </ol>
+                </form>
         </ul>
+        <h2>Muchas gracias por visitarnos</h2>
     </body>
-
 </html>
