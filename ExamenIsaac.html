@@ -1,18 +1,20 @@
 <!DOCTYPE html>
 <html lang="es">
     <head>
+        <link rel="stylesheet" type="text/css" href="Recursos ExamenIsaac/StyleExamenIsaac.css">
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Todo sobre Isaac Asimov</title>
     </head>
     <body>
-        <h1>Conoce un poco mas sobre Isaac Asimov</h1>
+        <header>
+            <h1>Conoce un poco mas sobre Isaac Asimov</h1>
+        </header>
         <p>Isaac Asimov (1920-1992) fue reconocido como uno de los grandes maestros de la ciencia ficción y, junto con Robert A. Heinlein y Arthur C. Clarke, considerado en vida como uno de los tres grandes escritores del género. Su obra cumbre es la «Trilogia de la Fundación», que en 1966 mereció el premio Hugo a la mejor serie de ciencia ficción de todos los tiempos.</p>
         <p>Su infancia transcurrió en el barrio neoyorquino de Brooklyn, donde el joven Isaac aprendió por sí mismo a leer a la edad de cuatro o cinco años; cabe destacar que nunca aprendió ruso. La juventud del futuro escritor transcurrió entre los estudios y el trabajo en las distintas tiendas de golosinas que su padre regentaba en el barrio de Brooklyn. Fue entre esos estantes llenos de revistas donde el joven Asimov se encontró por primera vez con la ciencia ficción. Comenzó a escribir en su adolescencia temprana y, a los 19 años, empezó a publicar sus relatos de ciencia ficción en las revistas de ficción llamadas pulps. Tenía tanto miedo a volar que sólo viajó en avión dos veces en toda su vida, lo que le hizo pensar que podía padecer de acrofobia. Asimismo padecía claustrofilia, lo opuesto de la claustrofobia, es decir, le gustaban los lugares pequeños y cerrados.</p>
-        <ul>
-            <li><h2>Algunos datos curiosos de Isaac Asimov</h2></li>
-                <ol>
-                    <dl>
+            <h2>Algunos datos curiosos de Isaac Asimov</h2></li>
+                <ol >
+                    <dl class="lista1">
                         <li><dt><b>Ni siquiera él mismo sabía su fecha de nacimiento.</b></dt></li>
                             <dd>Aunque oficialmente su nacimiento se señala el día 2 de enero de 1920, ni siquiera el propio Asimov sabía cuándo nació. La razón de esto es que Asimov nació en el pueblo de Petrovichi en la República Socialista Federativa Soviética de Rusia —es decir, cuando la Rusia zarista ya había desaparecido y antes de que surgiera la URSS— en el seno de una familia judía, y en aquellos días no existían registros precisos de la población. Su madre, en el afán de inscribir al pequeño Isaac un año antes a la escuela, declaró que su nacimiento había sido el 7 de septiembre de 1919; Asimov, al darse cuenta de esto, tramitó el cambio oficial de su fecha de nacimiento al 2 de enero, que era la fecha en que tradicionalmente celebraba su cumpleaños.</dd>
                         <br>
@@ -46,59 +48,65 @@
                         <small>Tomado de: <a href="https://www.milenio.com/cultura/diez-datos-que-no-conocias-sobre-isaac-asimov">https://www.milenio.com/cultura/diez-datos-que-no-conocias-sobre-isaac-asimov</a></small>
                     </dl>
                 </ol>
-            <li><h2>Algunas portadas de los libros mas populares de Isaac Asimov</h2></li>
-                <table>
-                    <caption><h3>Portadas mas populares</h3></caption>
-                    <thead>
-                        <tr>
-                            <th scope="col">Nombre del libro</th>
-                            <th scope="col">Imagen del Libro</th>
-                            <th scope="col">Año</th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        <tr>
-                            <th scope="row">Yo, Robot</th>
-                            <td>
-                                <figure><img src="Recursos ExamenIsaac/Yo, Robot.jpg" alt="Yo, Robot" width="150" height="200"></figure>
-                            </td>
-                            <td>1950</td>
-                        </tr>
-                        <tr>
-                            <th scope="row">El hombre bicentenario</th>
-                            <td>
-                                <figure><img src="Recursos ExamenIsaac/El hombre bicentenario.jpg" alt="El hombre bicentenario" width="150" height="200"></figure>
-                            </td>
+            <h2>Algunas portadas de los libros mas populares de Isaac Asimov</h2>
+            <div id="mostrar_tabla">
+                <form action="?php echo $_SERVER['PHP_SELF'];?>" name="tabla_datos" id="tabla_datos" method="POST">
+                    <table class="table table-striped" id="tabla" name="tabla" width="600" border="2" cellspacing="3" cellpadding="3" style="font-size: 10pt">
+                        <caption><h3>Portadas mas populares</h3></caption>
+                        <thead>
+                            <tr>
+                                <th scope="col">Nombre del libro</th>
+                                <th scope="col">Imagen del Libro</th>
+                                <th scope="col">Año</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <th scope="row">Yo, Robot</th>
+                                <td>
+                                    <figure><img src="Recursos ExamenIsaac/Yo, Robot.jpg" alt="Yo, Robot" width="150" height="200"></figure>
+                                </td>
+                                <td>1950</td>
+                            </tr>
+                            <tr>
+                                <th scope="row">El hombre bicentenario</th>
+                                <td>
+                                    <figure><img src="Recursos ExamenIsaac/El hombre bicentenario.jpg" alt="El hombre bicentenario" width="150" height="200"></figure>
+                                </td>
                             <td>1976</td>
-                        </tr>
-                        <tr>
-                            <th scope="row">Los propios dioses</th>
-                            <td>
-                                <figure><img src="Recursos ExamenIsaac/Los propios dioses.jpg" alt="Los propios dioses" width="150" height="200"></figure>
-                            </td>
-                            <td>1972</td>
-                        </tr>
-                        <tr>
-                            <th scope="row">El fin de la eternidad</th>
-                            <td>
-                                <figure><img src="Recursos ExamenIsaac/El fin de la eternidad.jpg" alt="El fin de la eternidad" width="150" height="200"></figure>
-                            </td>
-                            <td>1955</td>
-                        </tr>
-                        <tr>
-                            <th scope="row">La última pregunta</th>
-                            <td>
-                                <figure><img src="Recursos ExamenIsaac/La última pregunta.jpg" alt="La última pregunta" width="150" height="200"></figure>
-                            </td>
-                            <td>1956</td>
-                        </tr>
-                    </tbody>
-                </table>
-            <li><h2>Conoce un poco mas de Isaac Asimov mediante este video</h2></li>
+                            </tr>
+                            <tr>
+                                <th scope="row">Los propios dioses</th>
+                                <td>
+                                    <figure><img src="Recursos ExamenIsaac/Los propios dioses.jpg" alt="Los propios dioses" width="150" height="200"></figure>
+                                </td>
+                                <td>1972</td>
+                            </tr>
+                            <tr>
+                                <th scope="row">El fin de la eternidad</th>
+                                <td>
+                                    <figure><img src="Recursos ExamenIsaac/El fin de la eternidad.jpg" alt="El fin de la eternidad" width="150" height="200"></figure>
+                                </td>
+                                <td>1955</td>
+                            </tr>
+                            <tr>
+                                <th scope="row">La última pregunta</th>
+                                <td>
+                                    <figure><img src="Recursos ExamenIsaac/La última pregunta.jpg" alt="La última pregunta" width="150" height="200"></figure>
+                                </td>
+                                <td>1956</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </form>
+            </div>
+            <h2>Conoce un poco mas de Isaac Asimov mediante este video</h2>
+                <div style="text-align: center;">
                 <iframe width="560" height="315" src="https://www.youtube.com/embed/PK-kF68hyi8" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-            <li><h2>Completa el siguente formulario</h2></li>
-                <form action="Datos">
-                    <ol>
+                </div>
+            <h2>Completa el siguente formulario</h2>
+                <form action="Datos" style="text-align: center;" >
+                    <ol style="text-align: center;">
                         <li>Selecciona la fecha de hoy<input type="date" placeholder="Selecciona la fecha en la que completas este formulario"></li>
                         <br>
                         <li><label for="">Escribe tu Nombre<input type="text" value="Nombre Aqui"></label></li>
@@ -132,7 +140,7 @@
                         <input type="submit" value="Enviar!"/>
                     </ol>
                 </form>
-        </ul>
+        
         <h2>Muchas gracias por visitarnos</h2>
         <footer> 
             <address> 
